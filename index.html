@@ -14,7 +14,7 @@
 
         <div class="contenedor">
             <div>
-                <h2 class="titulos">Sobre Mí</h2>
+                <h2 class="titulos">About Me</h2>
                 <p class="parrafos">
                     Hello! I'm Cristóbal, and I'm 21 years old. This page is meant to share a little more about my life. I'm currently studying Industrial Civil Engineering at Universidad de los Andes, where I started in 2021.
                     Im currently living in the Las Condes district with my partner and siblings.
@@ -22,13 +22,13 @@
                 </p>
             </div>
 
-            <img src="imagen1.jpg" alt="Error">
+            <img src="balls.png" alt="Error">
 
         </div>
         <div> 
             <h2 class="titulos">Skills</h2>
             <p class="parrafos">
-                Below is a brief description of my levels of professionalism in each programming language.
+                Below is a brief description of my levels of professionalism in each of this skills.
             </p>
             <table class="tabla">
                 <tr>
@@ -69,11 +69,17 @@
                 </tr>
             </table>
         </div>
+
         <div class="boton">
-            <form>
-                <input class="user" type="text" placeholder="Word">
-                <input type="button">
-            </form>
+            <p id="texto">Leave a comment!</p>
+            <input class="user" type="text" id="campoTexto" placeholder="Write something here!">
+            <input class= "imagen_boton" type="button" onclick="actualizarTexto()">
+            <script>
+                function actualizarTexto() {
+                    let nuevoTexto = document.getElementById("campoTexto").value;
+                    document.getElementById("texto").textContent = nuevoTexto;
+                }
+            </script>
         </div>
 
         <footer class="pie">
