@@ -77,3 +77,11 @@ img {
 .last_text {
     font-size: 20px;
 }
+
+.user {
+    width: 20%;
+}
+
+.boton {
+    padding: 20px;
+}
