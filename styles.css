@@ -1,0 +1,79 @@
+.bloque_principal {
+    background-image: url(background.jpg);
+    padding: 80px;
+    background-position: left;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.t_principal {
+    color:black;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulos {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.parrafos {
+    color: black;
+    line-height: 1.5;
+    width: 900px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.tabla {
+    width: 40%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    letter-spacing: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.pie {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    height: 200px;
+    margin-left: 300px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.diseño {
+    color: beige;
+    font-size: 20px;
+}
+
+.last_text {
+    font-size: 20px;
+}
