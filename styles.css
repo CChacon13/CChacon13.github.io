@@ -1,3 +1,12 @@
+/*Primer cambio*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .bloque_principal {
     background-image: url(background.jpg);
     padding: 80px;
@@ -5,35 +14,37 @@
     margin-bottom: 40px;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .t_principal {
     color:black;
     font-size: 38px;
     font-weight: bold;
-    text-align: center;
 }
 
 .titulos {
     text-decoration: underline;
     background-color: black;
     color: white;
-    width: 110px;
+    padding: 5px 10px;
+    display: inline-block;
 }
 
 .parrafos {
     color: black;
     line-height: 1.5;
-    width: 900px;
-    margin-bottom: 20px;
+    max-width: 90%;
+    margin: auto;
     font-size: 20px;
     font-style: italic;
 }
 
 .tabla {
-    width: 40%;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin-bottom: 50px;
 }
 
 th, td {
@@ -49,18 +60,22 @@ th, td {
     color: aliceblue;
     text-align: center;
     padding: 20px;
-    position: relative;
     width: 100%;
 }
 
 img {
-    width: 300px;
-    height: 150px;
-    margin-left: 100px;
+    max-width: 15%;
+    height: auto;
+    margin: 2px auto;
+    display: block;
 }
 
 .contenedor {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .diseño {
@@ -73,7 +88,9 @@ img {
 }
 
 .user {
-    width: 80%;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
 }
 
 .boton {
@@ -83,12 +100,46 @@ img {
     text-align: center;
     background-color: #666;
     color: white;
-    border: black;
+    border: none;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagen_boton {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tabla {
+        font-size: 14px;
+    }
+
+    .user {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabla {
+        font-size: 12px;
+    }
+
+    .user {
+        width: 100%;
+    }
+
+    .imagen_boton {
+        width: 30px;
+        height: 30px;
+    }
 }
