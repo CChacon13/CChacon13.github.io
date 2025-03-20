@@ -26,7 +26,7 @@ function mostrarNoticias(data) {
         return;
     }
 
-    data.articles.forEach(article => {
+    data.articles.slice(0, 10).forEach(article => {
         const newsCard = document.createElement("div");
         newsCard.className = "col-12 col-md-6 col-lg-4 mb-4";
         newsCard.innerHTML = `
