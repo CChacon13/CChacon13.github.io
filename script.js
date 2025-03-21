@@ -12,7 +12,6 @@ function fetchNews() {
             const jsonData = JSON.parse(data.contents); 
             mostrarNoticias(jsonData);
         })
-        .catch(error => console.error("Error: ", error));
 }
 
 function mostrarNoticias(data) {
