@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("fetchNews").addEventListener("click", fetchNews);
 });
 
-function fetchNews() {
-    const apiKey = "531ecbc3d4174b0589bb0ae901b65395"; 
-    const category = "sports"; 
+function fetchNews() { 
     const url = "https://newsapi.org/v2/top-headlines?category=sports&apiKey=531ecbc3d4174b0589bb0ae901b65395";
     const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
 
@@ -14,7 +12,7 @@ function fetchNews() {
             const jsonData = JSON.parse(data.contents); 
             mostrarNoticias(jsonData);
         })
-        .catch(error => console.error("Error fetching news:", error));
+        .catch(error => console.error("Error: ", error));
 }
 
 function mostrarNoticias(data) {
