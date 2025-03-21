@@ -11,7 +11,7 @@ function fetchNews() {
     fetch(proxyUrl)
         .then(response => response.json())
         .then(data => {
-            const jsonData = JSON.parse(data.contents); // AllOrigins devuelve JSON anidado
+            const jsonData = JSON.parse(data.contents); 
             mostrarNoticias(jsonData);
         })
         .catch(error => console.error("Error fetching news:", error));
